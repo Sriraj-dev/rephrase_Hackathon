@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
     loadingController.changeVideoStatus("processing");
     print("Creating a Campaign!!!\n\n");
     String campaign_id = await ApiServices().createCampaign(
-      "Hello , This is Sriraj ,currently Pursuing electrical engineering from IIT BHU. Im Proficient inn programming languages like C, C++,C#,Dart , Python etc.\n Apart from that Iam very much interested in app development,gamedevelopment and have developed quite a good projects and deployed some of them. Other than that i also do have strong backround in DSA and competetive programming. Looking forward to meet you in person and would be glad to work with you!", 
+      extractedText, 
       "https://rephrase-assets.s3.ap-south-1.amazonaws.com/media/panel_defaults/background/image/blue_1.webp"
     );
 
